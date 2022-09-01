@@ -1,0 +1,133 @@
+.page-wrapper{
+    background: url(../images/lig-login-bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.page-wrapper h2{
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+.page-wrapper .logo-top{
+    text-align: center;
+}
+.page-wrapper-inner{
+    width: 540px;
+    margin: 0 auto;
+    /*    position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);*/
+}
+.form-section{
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.2);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    background: white;
+    padding: 15px 80px;
+}
+.form-section .form-control{
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 0;
+    height: 40px;
+}
+.form-section form .form-group label{
+    margin-bottom: 10px;
+    font-size: 12pt;
+}
+.form-section h3{
+    font-size: 23pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.form-section h3:after{
+    content: '';
+    width: 52px;
+    height: 7px;
+    display: block;
+    margin: 20px auto;
+    background-image: url(../images/after-title.png);
+    background-repeat: no-repeat;
+}
+.form-section .checkbox{
+    margin-bottom: 20px;
+}
+.form-section .checkbox label, .forget-password{
+    color: #737373;
+}
+
+.forget-password:hover{
+    text-decoration: none;
+}
+.btn-login {
+    height: 34px;
+    padding: 5px 15px;
+    line-height: 21px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    background: #059ddf;
+    border: solid 2px #059ddf;
+    width: 116px;
+    border-radius: 5px;
+}
+.btn-login:hover {
+    background: transparent;
+    color: #059ddf;
+}
+.forget-pw{
+    text-align: right;
+}
+.footer{
+    width: 100%;
+    float: left;
+    background: #233744;
+    position: absolute;
+    bottom: 0;
+}
+.footer p{
+    font-size: 12px;
+    color: white;
+}
+.footer p, .footer img{
+    margin-top: 10px;
+}
+@media only screen and (max-width: 1023px) and (min-width: 481px)  {
+    .page-wrapper{
+        min-width: 100%;
+        position: relative;
+        padding-bottom: 100px;
+    }
+}
+@media screen and (max-width: 580px) {
+    .page-wrapper{
+        min-width: 100%;
+        position: relative;
+        padding-bottom: 100px;
+    }
+    .page-wrapper-inner{
+        width: 100%;
+    }
+    .form-section{
+        padding: 30px 30px;
+    }
+    .forget-pw{
+        text-align: left;
+        margin-top: 20px;
+    }
+}

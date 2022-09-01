@@ -1,0 +1,31 @@
+/* 
+ * Stepper v3.0.7 - 2014-05-07 
+ * A jQuery plugin for cross browser number inputs. Part of the Formstone Library. 
+ * http://formstone.it/stepper/ 
+ * 
+ * Copyright 2014 Ben Plum; MIT Licensed 
+ */ 
+@import url('fonts.css');
+	.stepper { border-radius: 4px; margin: 0 0 10px 0; overflow: hidden; position: relative; width: 100%; }
+	.stepper .stepper-input { background: rgba(57,56,87,0.1); border: 0; border-radius: 4px; color: #333; font-size: 13px; line-height: 40px; margin: 0; overflow: hidden; padding: 9px 10px 10px; width: 100%; z-index: 49;
+		-moz-appearance: textfield;
+	}
+
+	.stepper .stepper-input::-webkit-inner-spin-button,
+	.stepper .stepper-input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; }
+
+	.stepper .stepper-input:focus { background: rgba(57,56,87,0.1); }
+	.stepper .stepper-arrow { background: transparent; border: 0; cursor: pointer; display: block; height: 50%; position: absolute; right: 15px;  width: 20px; z-index: 50; font-size:25px;}
+	.stepper .stepper-arrow.up { background-position: center top; border-bottom: none; top: 0; margin-top: -2px; }
+	.stepper .stepper-arrow.down { background-position: center bottom; bottom: 7px; }
+
+	@media screen and (min-width: 740px) {
+		.stepper:hover .stepper-input { background: rgba(57,56,87,0.1); }
+
+		.stepper .stepper-step:hover { background: rgba(57,56,87,0.1); }
+
+		.stepper.disabled .stepper-arrow { background: rgba(57,56,87,0.1); border-color: rgba(57,56,87,0.1); cursor: default; }
+	}
+
+	.stepper.disabled .stepper-input { background: rgba(57,56,87,0.1); border-color: rgba(57,56,87,0.1); color: #4A4A4A; }
+	.stepper.disabled .stepper-arrow { background: rgba(57,56,87,0.1); border-color: rgba(57,56,87,0.1); cursor: default; }
